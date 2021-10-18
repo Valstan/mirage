@@ -1,7 +1,8 @@
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
-start = (0, 3, 32)
-end = (1, 7, 23)
+# часы, минуты, секунды
+start = (0, 0, 42)
+end = (0, 4, 39)
 
 start_time = 3600 * start[0] + 60 * start[1] + start[2]
 end_time = 3600 * end[0] + 60 * end[1] + end[2]
