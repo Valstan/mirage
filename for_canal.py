@@ -1,17 +1,21 @@
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from moviepy.editor import *
 
-regim = 1
+regim = 1  # 1 - просто вырезать кусочек
+path_in_file = "d:/YandexDisk/Культура - медиа/ДК Малмыж/Праздничный концерт 8 марта 2024 в ДК Малмыж/"  # "d:/2222222/"
+name_in_file = "Праздничный концерт 8 марта 2024 в ДК Малмыж Полная версия.mp4"  # "S2360033.MP4"
+path_out_file = "d:/"
+name_out_file = "out_video.mp4"
 
 if regim == 1:
     # часы, минуты, секунды
-    start = (0, 0, 9)
-    end = (0, 17, 16)
+    start = (0, 9, 24)
+    end = (0, 12, 50)
 
     start_time = 3600 * start[0] + 60 * start[1] + start[2]
     end_time = 3600 * end[0] + 60 * end[1] + end[2]
 
-    ffmpeg_extract_subclip("111.mp4", start_time, end_time, targetname="rutub_vk.mp4")
+    ffmpeg_extract_subclip(path_in_file + name_in_file, start_time, end_time, targetname=path_out_file + name_out_file)
 else:
     img = ['1.png']
 
