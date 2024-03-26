@@ -2,8 +2,8 @@ from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from moviepy.editor import *
 
 regim = 1  # 1 - просто вырезать кусочек
-path_in_file = "d:/YandexDisk/Культура - медиа/ДК Малмыж/Праздничный концерт 8 марта 2024 в ДК Малмыж/"  # "d:/2222222/"
-name_in_file = "Праздничный концерт 8 марта 2024 в ДК Малмыж Полная версия.mp4"  # "S2360033.MP4"
+path_in_file = "d:/"  # "d:/2222222/"
+name_in_file = "S2380001.MP4"  # "S2360033.MP4"
 path_out_file = "d:/"
 name_out_file = "out_video.mp4"
 
